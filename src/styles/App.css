@@ -76,3 +76,7 @@ a:active {
 li a.dropdown-item {
     padding: 10px;
 }
+
+li button.dropdown-item {
+    padding: 10px;
+}
