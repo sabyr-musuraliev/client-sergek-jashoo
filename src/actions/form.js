@@ -9,10 +9,13 @@ import {
 export const createPatient = (patientName, patient) => {
     return async (dispatch) => {
         try {
-            await axios.post("http://localhost:5000/patients/create", {
-                patientName,
-                patient,
-            });
+            await axios.post(
+                "https://sergek-jashoo.onrender.com/patients/create",
+                {
+                    patientName,
+                    patient,
+                }
+            );
             await dispatch(updateStep(0));
         } catch (error) {
             alert(error.response.data.message);
@@ -23,10 +26,13 @@ export const createPatient = (patientName, patient) => {
 export const updatePatient = (patientName, patient, id) => {
     return async (dispatch) => {
         try {
-            await axios.put(`http://localhost:5000/patients/${id}/edit`, {
-                patientName,
-                patient,
-            });
+            await axios.put(
+                `https://sergek-jashoo.onrender.com/patients/${id}/edit`,
+                {
+                    patientName,
+                    patient,
+                }
+            );
         } catch (error) {
             alert(error);
         }
@@ -44,7 +50,7 @@ export const updateSession = (
     return async (dispatch) => {
         try {
             await axios.put(
-                `http://localhost:5000/patients/${id}/session/edit`,
+                `https://sergek-jashoo.onrender.com/patients/${id}/session/edit`,
                 {
                     anamnesisDisease,
                     somatStatus,
@@ -64,7 +70,7 @@ export const getUpdatePatient = (id) => {
         dispatch(isLoadingSes(true));
         try {
             const response = await axios.get(
-                `http://localhost:5000/patients/${id}/edit`
+                `https://sergek-jashoo.onrender.com/patients/${id}/edit`
             );
             await dispatch(setOnePatientEdit(response.data));
             await dispatch(isLoadingSes(false));
@@ -81,7 +87,7 @@ export const getUpdateSession = (id) => {
         dispatch(isLoadingSes(true));
         try {
             const response = await axios.get(
-                `http://localhost:5000/patients/${id}/session/edit`
+                `https://sergek-jashoo.onrender.com/patients/${id}/session/edit`
             );
             await dispatch(setOneSessionEdit(response.data));
             await dispatch(isLoadingSes(false));
@@ -103,14 +109,17 @@ export const createSession = (
 ) => {
     return async (dispatch) => {
         try {
-            await axios.post("http://localhost:5000/patients/createSession", {
-                anamnesisDisease,
-                somatStatus,
-                nervStatus,
-                psychStatus,
-                formData,
-                idName,
-            });
+            await axios.post(
+                "https://sergek-jashoo.onrender.com/patients/createSession",
+                {
+                    anamnesisDisease,
+                    somatStatus,
+                    nervStatus,
+                    psychStatus,
+                    formData,
+                    idName,
+                }
+            );
         } catch (error) {
             alert(error.response.data.message);
         }

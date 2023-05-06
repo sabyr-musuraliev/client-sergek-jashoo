@@ -20,7 +20,7 @@ export const fetchPatients = (page) => {
         dispatch(isLoading(true));
         try {
             const response = await axios.get(
-                `http://localhost:5000/patients?page=${page}&size=10`
+                `https://sergek-jashoo.onrender.com/patients?page=${page}&size=10`
             );
             await dispatch(setTotalPages(response.data.totalPages));
             await dispatch(setPatient(response.data.patients));
@@ -38,7 +38,7 @@ export const fetchPatientData = (id) => {
         dispatch(isLoadingCart(true));
         try {
             const response = await axios.get(
-                `http://localhost:5000/patients/${id}`,
+                `https://sergek-jashoo.onrender.com/patients/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
@@ -62,7 +62,7 @@ export const fetchSessionData = (id) => {
         dispatch(isLoadingSession(true));
         try {
             const response = await axios.get(
-                `http://localhost:5000/patients/session/${id}`,
+                `https://sergek-jashoo.onrender.com/patients/session/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
@@ -85,7 +85,7 @@ export const deactivateSession = (id) => {
         dispatch(isLoadingCart(true));
         try {
             const response = await axios.patch(
-                `http://localhost:5000/patients/session/${id}`,
+                `https://sergek-jashoo.onrender.com/patients/session/${id}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem(
@@ -107,7 +107,7 @@ export const searchPatient = (limit = 10, page, search) => {
         dispatch(isLoadingSearch(true));
         try {
             const response = await axios.get(
-                `http://localhost:5000/patients/searchTag?size=${limit}&page=${page}&searchName=${search}`
+                `https://sergek-jashoo.onrender.com/patients/searchTag?size=${limit}&page=${page}&searchName=${search}`
             );
             console.log(
                 "from actions total pages search",
@@ -128,7 +128,7 @@ export const deletePatient = (id) => {
     return async (dispatch) => {
         try {
             const response = await axios.delete(
-                `http://localhost:5000/patients/delete/${id}`
+                `https://sergek-jashoo.onrender.com/patients/delete/${id}`
             );
         } catch (error) {
             console.log(error);
