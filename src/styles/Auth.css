@@ -1,0 +1,16 @@
+.auth-wrapper {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 200px;
+}
+
+.login-input {
+    margin-bottom: 20px;
+}
+
+.login-button {
+    width: 100%;
+}

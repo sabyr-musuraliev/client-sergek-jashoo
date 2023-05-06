@@ -1,0 +1,15 @@
+.form-wrapper { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-inner-wrapper {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.form-inner-wrapper input {
+    padding-left: 10px !important;
+}

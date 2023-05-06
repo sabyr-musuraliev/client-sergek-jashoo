@@ -1,0 +1,76 @@
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #3ec914;
+    border-radius: 50%;
+    line-height: 25px;
+    color: white;
+    border: 2px transparent solid;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.stepWrapper {
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stepBlock {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stepBlock span {
+    text-align: center;
+}
+
+.circleWrapper {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.selected .circle {
+    background-color: #fff;
+    border-color: #3ec914;
+    color: #000;
+}
+
+button.button-prime {
+    background-color:#3ec914;
+    border: 2px #3ec914 solid;
+    color: #fff;
+}
+
+button.button-prime:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #3ec914;
+}
+
+.btnWrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 70px;
+}
+/* .stepBlock:not(:last-child) .circleWrapper::after {
+    content: '';
+    width: 180px;
+    height: 2px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background-color: #3ec914;
+    margin: auto;
+    z-index: 0;
+} */

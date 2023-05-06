@@ -1,0 +1,26 @@
+.nav-modal {
+    background: #c3d946;
+    width: 200px;
+    position: absolute;
+    right: 10px;
+    top: 53px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.list-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list-modal li {
+    padding-bottom: 5px;
+}
+.list-modal li a {
+    color: #fff !important;
+}

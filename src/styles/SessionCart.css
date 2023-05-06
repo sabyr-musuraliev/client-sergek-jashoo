@@ -1,0 +1,7 @@
+.session-wrap {
+    display: flex;
+}
+
+.session-wrap h6 {
+    margin-right: 20px;
+}

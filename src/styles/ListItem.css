@@ -1,0 +1,15 @@
+.box_photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.patient_img {
+    width: 45px;
+    position: absolute;
+    top: center;
+    right: center;
+}

@@ -1,0 +1,75 @@
+.box-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('../assets/images/karmanbek.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+.inner-cart-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px #c3d946 solid;
+}
+.inner-cart-photo h5 {
+    text-align: center;
+    margin-top: 20px;
+}
+.inner-cart-cast {
+    margin-top: 50px;
+}
+.block-for-data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.block-for-data strong {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.block-for-data span {
+    font-size: 15px;
+}
+
+.inner-cart-cast h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.list-item-cart {
+    background-color: #c3d946;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.list-item-cart:last-child {
+    margin-bottom: 0;
+}
+
+.list-item-cart .item-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px #fff solid;
+}
+
+.list-item-cart .item-cart:last-child {
+    border-right: none;
+}
+
+.list-item-cart .item-cart span {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    padding: 6px 12px;
+}
+.list-item-cart .item-cart strong {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+}

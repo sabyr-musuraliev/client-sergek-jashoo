@@ -1,0 +1,23 @@
+.in_hospital {
+    background-color: #3ec914;
+    padding: 6px;
+    border-radius: 5px;
+    color: #fff;
+    max-width: 150px;
+}
+
+.alcohol {
+    background-color: rgb(228, 148, 20);
+}
+
+.drug {
+    background-color: rgb(204, 53, 53);
+}
+
+.stationar {
+    background-color: #3ec914;
+}
+
+.out {
+    background-color: rgb(95, 95, 95);
+}
