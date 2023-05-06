@@ -73,6 +73,6 @@ a:active {
     padding: 20px;
 }
 
-.dropdown-item {
+li a.dropdown-item {
     padding: 10px;
 }
