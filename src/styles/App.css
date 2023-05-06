@@ -1,59 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&display=swap");
 
 body {
-  font-family: 'Comfortaa', cursive !important;
-  font-size: 14px !important;
-  background-image: url('../assets/images/patternpad.png');
-  background-size: 300px;
+    font-family: "Comfortaa", cursive !important;
+    font-size: 14px !important;
+    background-image: url("../assets/images/patternpad.png");
+    background-size: 300px;
 }
 
-div, span, a, p, input, button, select, h1, h2, h3, h4, h5, h6, label, fieldset, li {
-  font-family: 'Comfortaa', cursive !important;
+div,
+span,
+a,
+p,
+input,
+button,
+select,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+fieldset,
+li {
+    font-family: "Comfortaa", cursive !important;
 }
 
 .Mui-active {
-  color: #53b037 !important;
+    color: #53b037 !important;
 }
 .Mui-completed {
-  color: #53b037 !important;
+    color: #53b037 !important;
 }
 
 .dsdsds {
-  background-color: #53b037 !important;
+    background-color: #53b037 !important;
 }
 
 .lolo {
-  color: #53b037 !important;
+    color: #53b037 !important;
 }
 
 a {
-  color: #000 !important;
-  text-decoration: none !important;
-  font-size: 14px !important;
+    color: #000 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
 }
 
 a:hover,
 a:active {
-  color: #53b037 !important;
+    color: #53b037 !important;
 }
 
 .wrapper-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #c3d946;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #c3d946;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 .title {
-  text-align: center;
-  color: #fff;
+    text-align: center;
+    color: #fff;
 }
 
 .inner-block {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.dropdown-item {
+    padding: 10px;
 }
